@@ -1,0 +1,35 @@
+# Dependency directory
+node_modules
+
+# Configuration files
+tests/proxy/config.js
+
+# Test files
+tests/proxy/mocks.js.dist
+
+# Built resources
+dist
+.fusebox
+
+# OSX stuff
+.DS_Store
+
+# Logs
+npm-debug.log
+
+# IDE related
+.idea
+*.sublime-project
+*.sublime-workspace
+.vscode
+
+# TMP
+src/styles/tests/app.css
+tests/e2e/reports/
+eslint.xml
+TESTS-*.xml
+tsconfig.json
+
+newrelic_agent.log
+coverage
+junit.xml

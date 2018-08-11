@@ -1,0 +1,36 @@
+{
+    "parser": "babel-eslint",
+    "env": {
+        "browser": true
+    },
+    "extends": ["airbnb", "plugin:react/recommended", "prettier", "prettier/react", "plugin:jest/recommended"],
+    "plugins": ["react", "prettier", "jest"],
+    "rules": {
+        "react/forbid-prop-types": ["error", { "forbid": ["any", "array"] }],
+        "prettier/prettier": "error",
+        "prefer-destructuring": ["warn"],
+        "react/destructuring-assignment": ["warn"],
+        "jsx-a11y/click-events-have-key-events": ["warn"],
+        "jsx-a11y/mouse-events-have-key-events": ["warn"],
+        "jest/no-disabled-tests": "off"
+    },
+    "overrides": [
+        {
+            "files": ["**/*.{test,spec}.{js,jsx}", "{test,scripts}/**/*.{js,jsx}"],
+            "rules": {
+                "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+                "no-use-before-define": ["error", { "variables": false }],
+                "jest/no-large-snapshots": "error",
+                "jest/prefer-to-be-null": "error",
+                "jest/prefer-to-be-undefined": "error"
+            }
+        }
+    ],
+    "settings": {
+        "import/resolver": {
+            "webpack": {
+                "config": "scripts/webpack.dev.js"
+            }
+        }
+    }
+}
