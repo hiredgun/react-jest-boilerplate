@@ -7,7 +7,7 @@ module.exports = {
     appBuild: resolveApp('dist'),
     appPublic: resolveApp('public'),
     appHtml: resolveApp('public/index.html'),
-    appIndexJs: resolveApp('src/index.js'),
+    appIndexJs: resolveApp('src/index.jsx'),
     appPackageJson: resolveApp('package.json'),
     appSrc: resolveApp('src'),
     appNodeModules: resolveApp('node_modules'),
